@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <title>Online Shop</title>
+    <style>
+        .navbar {
+            width: 100%;
+            background-color: #eac4cb;
+        }
+
+        /* .footer{
+        width: 100%;
+    } */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- HEADER -->
+        <div class="row mb-3">
+            <div class="col-lg-3 col-md-3 d-none d-md-block text-lowercase text-secondary">Telephone: +374 77 777777
+            </div>
+            <div class="col-lg-3 col-md-3 d-none d-md-block text-lowercase text-secondary">E-mail: user123@gmail.com
+            </div>
+            <div class="col-6 col-lg-2 col-md-2">
+                <select class="custom-select text-secondary">
+                    <option value="1">AM</option>
+                    <option value="2">RU</option>
+                    <option value="3">EN</option>
+                </select>
+                </select>
+            </div>
+            <div class="col-6 col-lg-2 col-md-2">
+                <select class="custom-select text-secondary">
+                    <option value="1">AMD</option>
+                    <option value="2">RUB</option>
+                    <option value="3">USD</option>
+                </select>
+            </div>
+            <div class="col-lg-2 col-md-2 d-none d-md-block">
+                <button type="button" class="btn text-secondary">
+                    Messages <span class="badge badge-light">9</span>
+                    <span class="sr-only">unread messages</span>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light  ">
+                <div class="col-auto">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="https://seeklogo.com/images/G/girls-and-clothing-fashion-shop-logo-4CEBE10B9E-seeklogo.com.png"
+                            alt="" width="150" class="img-fluid">
+                    </a>
+                </div>
+
+
+                <div class="col-auto d-none d-md-block ml-auto">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary my-2 my-sm-0 " type="submit">Search</button>
+                    </form>
+                </div>
+
+                <div class="col-auto">
+                    <ul class="navbar-nav mr-auto ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                My Account
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                    data-target="#loginModal">Login</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                    data-target="#registerModal">Register</a>
+                                <a class="dropdown-item" href="myorders.html">My Orders</a>
+                                <a class="dropdown-item" href="settings.html">Account Settings</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-between"
+                style="background-color: #eac4cb;">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse d-lg-flex justify-content-between " id="navbarSupportedContent">
+                    <div class="dropdown mt-3">
+                        <button class="btn btn-secondary " type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Home
+                        </button>
+                    </div>
+                    <div class="btn-group mt-3">
+                        <button type="button" class="btn btn-secondary"><a href="category.html"
+                                style="text-decoration: none; color: white;">For Womens</a></button>
+                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Jewelry</a>
+                            <a class="dropdown-item" href="#">Watches</a>
+                            <a class="dropdown-item" href="#">Shoes</a>
+                            <a class="dropdown-item" href="#">Clothes</a>
+                            <a class="dropdown-item" href="#">Accessories</a>
+                            <a class="dropdown-item" href="#">Care products</a>
+                            <a class="dropdown-item" href="#">Bags</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mt-3">
+                        <button type="button" class="btn btn-secondary">For Men</button>
+                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Clothes</a>
+                            <a class="dropdown-item" href="#">Shoes</a>
+                            <a class="dropdown-item" href="#">Watches</a>
+                            <a class="dropdown-item" href="#">Accessories</a>
+                            <a class="dropdown-item" href="#">Bags</a>
+                            <a class="dropdown-item" href="#">Wallets</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mt-3">
+                        <button type="button" class="btn btn-secondary">For Children</button>
+                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Clothes</a>
+                            <a class="dropdown-item" href="#">Shoes</a>
+                            <a class="dropdown-item" href="#">Bags</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!--CONTENT-->
+        <div class="row">
+            <nav class="my-3 " aria-label="breadcrumb" style="width: 100%;">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#"> Add To Cart</a></li>
+                  <li class="breadcrumb-item"><a href="#"> Payment method</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Shipping address</li>
+                </ol>
+              </nav>
+        </div>
+
+        <div class="row mb-5">
+            <h1 class="m-auto ">Shipping address</h1>
+        </div>
+        
+        <div class="row ">
+            <form class=" m-auto">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="validationCustom03">Country</label>
+                    <input type="text" class="form-control" id="validationCustom03"
+                        placeholder="Country" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="validationCustom03">City</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="City"required>
+                  </div>
+                </div>
+                <div class="form-group">
+                    <label for="validationCustom03">First Address</label>
+                    <input type="text" class="form-control" id="validationCustom03"
+                        placeholder="First Address" required>
+                  </div>
+                    <div class="form-group mb-3">
+                        <label for="validationCustom03">Second Address</label>
+                        <input type="text" class="form-control" id="validationCustom03"
+                            placeholder="Second Address" required>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label for="validationCustom03">House</label>
+                                    <input type="text" class="form-control" id="validationCustom03" placeholder="House"
+                                        required>
+                    </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+              </form>
+        </div>
+        <div class="row">
+            <a class="btn font-weight-bold text-secondary ml-auto mb-5" href="place-order.html" role="button"
+            style="background-color: #eac4cb;">Place order</a>
+        </div>
+
+        <!--Footer-->
+        <div class="row text-uppercase font-weight-bold mt-2 ">
+            <a href="#" class="border p-3 col-md-3 text-dark text-center" style="background-color: #eac4cb;">Contact
+                us</a>
+            <a href="#" class="border p-3 col-md-3 text-dark text-center" style="background-color: #eac4cb;">Live
+                chat</a>
+            <a href="#" class="border p-3 col-md-3 text-dark text-center"
+                style="background-color: #eac4cb;">shipping</a>
+            <a href="#" class="border p-3 col-md-3 text-dark text-center" style="background-color: #eac4cb;">terms and
+                conditions</a>
+        </div>
+
+        <div class="row   d-md-flex d-none">
+            <ul class=" border pt-2 pl-2 col-md-2" style="list-style-type: none;">
+                <a href="#" class="text-uppercase font-weight-bold text-secondary">
+                    <li>For Womens</li>
+                </a>
+                <a href="#" class="text-secondary">
+                    <li>Clothes</li>
+                </a>
+                <a href="#" class="text-secondary">
+                    <li>Jewelry</li>
+                </a>
+                <a href="#" class="text-secondary">
+                    <li>Bags</li>
+                </a>
+            </ul>
+            <ul class=" border pt-2 pl-2 col-md-2" style="list-style-type: none;">
+                <a href="#" class="text-uppercase font-weight-bold text-secondary">
+                    <li>For Men</li>
+                </a>
+                <a href="#" class="text-secondary">
+                    <li>Bags</li>
+                </a>
+                <a href="#" class="text-secondary">
+                    <li>Wallets</li>
+                </a>
+                <a href="#" class="text-secondary">
+                    <li>Accessories</li>
+                </a>
+            </ul>
+            <ul class=" border pt-2 pl-2 col-md-2" style="list-style-type: none;">
+                <a href="#" class="text-uppercase font-weight-bold text-secondary">
+                    <li>For Children</li>
+                </a>
+                <a href="#" class="text-secondary">
+                    <li>Clothes</li>
+                </a>
+                <a href="#" class="text-secondary">
+                    <li>Shoes</li>
+                </a>
+                <a href="#" class="text-secondary">
+                    <li>Bags</li>
+                </a>
+            </ul>
+            <ul class=" border pt-2 pl-2 col-md-3" style="list-style-type: none;">
+                <a href="#" class="text-uppercase font-weight-bold text-secondary">
+                    <li>Gifts</li>
+                </a>
+                <a href="#" class="text-secondary">
+                    <li>Sweet collection</li>
+                </a>
+                <a href="#" class="text-secondary">
+                    <li>Jewelry</li>
+                </a>
+                <a href="#" class="text-secondary">
+                    <li>Sales</li>
+                </a>
+            </ul>
+            <ul class=" border pt-2 pl-2 col-md-3" style="list-style-type: none;">
+                <a href="#" class="text-uppercase font-weight-bold text-secondary">
+                    <li>Sales</li>
+                </a>
+                <a href="#" class="text-secondary">
+                    <li>For all collections</li>
+                </a>
+                <a href="#" class="text-secondary">
+                    <li>In case lots of shopping</li>
+                </a>
+                <a href="#" class="text-secondary">
+                    <li>In different seasons</li>
+                </a>
+            </ul>
+        </div>
+
+
+        <div class="row  mt-1 mx-2">
+            <p class="text-dark d-lg-block d-none font-weight-bold" style="float:left;">Find us on:</p>
+            <div class=" col-md-4">
+                <a href="#"> <img src="https://www.rutgerson.se/wp-content/uploads/2016/11/facebook-icon-png-black.png"
+                        style="width: 2rem;"></a>
+                <a href="#"> <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Instagram_simple_icon.svg/1200px-Instagram_simple_icon.svg.png"
+                        style="width: 2rem;"></a>
+                <a href="#"> <img src="https://www.dlf.pt/png/big/20/201395_twitter-icon-png.png"
+                        style="width: 2rem;"></a>
+            </div>
+            <p class="text-dark text-center ml-auto align-self-center col-12 col-md-2"> &copy;Made with LOVE</p>
+        </div>
+    </div>
+
+    </div>
+
+
+
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign In</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">First Name</label>
+                            <input type="text" class="form-control" id="exampleInputFisrtName"
+                                aria-describedby="firstNameHelp" placeholder="Enter First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Last Name</label>
+                            <input type="text" class="form-control" id="exampleInputLastName"
+                                aria-describedby="lastNameHelp" placeholder="Enter Last Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+</body>
+
+</html>
